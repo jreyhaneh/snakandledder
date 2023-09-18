@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boardHeight">410dp</dimen>
+    <dimen name="boardWidth">410dp</dimen>
+    <dimen name="buttonHeight">54.87dp</dimen>
+    <dimen name="buttonWidth">38dp</dimen>
+    <dimen name="buttonMargin">15dp</dimen>
+</resources>

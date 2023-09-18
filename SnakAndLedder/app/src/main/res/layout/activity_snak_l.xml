@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:alpha="0.9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SnakL">
+
+    <Button
+        android:id="@+id/tass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tass"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image"
+        app:layout_constraintHorizontal_bias="0.9"
+        />
+
+    <Button
+        android:id="@+id/tass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tass"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/boardWidth"
+        android:layout_height="@dimen/boardHeight"
+        android:src="@drawable/ledder"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tass"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    --main board (xy)
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="410dp"
+        android:layout_width="410dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        --10 x 10 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.05">
+
+            <ImageButton
+                android:id="@+id/position90"
+                style="@style/bottonlayout"
+              />
+        <ImageButton
+            android:id="@+id/position91"
+            style="@style/bottonlayout"
+         />
+        <ImageButton
+            android:id="@+id/position92"
+            style="@style/bottonlayout"
+          />
+        <ImageButton
+            android:id="@+id/position93"
+            style="@style/bottonlayout"
+        />
+        <ImageButton
+            android:id="@+id/position94"
+            style="@style/bottonlayout"
+           />
+        <ImageButton
+            android:id="@+id/position95"
+            style="@style/bottonlayout"
+        />
+        <ImageButton
+            android:id="@+id/position96"
+            style="@style/bottonlayout"
+           />
+        <ImageButton
+            android:id="@+id/position97"
+            style="@style/bottonlayout"
+         />
+
+            <ImageButton
+                android:id="@+id/position98"
+                style="@style/bottonlayout"
+               />
+        <ImageButton
+
+            android:id="@+id/position99"
+            style="@style/bottonlayout"/>
+
+        </LinearLayout>
+        --9 x 9 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.14">
+
+            <ImageButton
+                android:id="@+id/position89"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position88"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position87"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position86"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position85"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position84"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position83"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position82"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position81"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position80"
+                style="@style/bottonlayout"
+              />
+
+        </LinearLayout>
+        --8 x 8 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.25">
+
+            <ImageButton
+                android:id="@+id/position70"
+                style="@style/bottonlayout"
+                 />
+
+            <ImageButton
+                android:id="@+id/position71"
+                style="@style/bottonlayout"
+                 />
+            <ImageButton
+                android:id="@+id/position72"
+                style="@style/bottonlayout"
+              />
+            <ImageButton
+                android:id="@+id/position73"
+                style="@style/bottonlayout"
+              />
+
+            <ImageButton
+                android:id="@+id/position74"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position75"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position76"
+                style="@style/bottonlayout"
+              />
+            <ImageButton
+                android:id="@+id/position77"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position78"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position79"
+                style="@style/bottonlayout"
+               />
+
+        </LinearLayout>
+        --7 x 7 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.35">
+
+            <ImageButton
+                android:id="@+id/position69"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position68"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position67"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position66"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position65"
+                style="@style/bottonlayout"
+            />
+            <ImageButton
+                android:id="@+id/position64"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position63"
+                style="@style/bottonlayout"
+                />
+
+            <ImageButton
+                android:id="@+id/position62"
+                style="@style/bottonlayout"
+                 />
+            <ImageButton
+                android:id="@+id/position61"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position60"
+                style="@style/bottonlayout"
+                />
+
+        </LinearLayout>
+        --6 x 6 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.45">
+
+            <ImageButton
+                android:id="@+id/position50"
+                style="@style/bottonlayout"
+                 />
+            <ImageButton
+                android:id="@+id/position51"
+                style="@style/bottonlayout"
+             />
+
+            <ImageButton
+                android:id="@+id/position52"
+                style="@style/bottonlayout"
+                 />
+            <ImageButton
+                android:id="@+id/position53"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position54"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position55"
+                style="@style/bottonlayout"
+                />
+
+            <ImageButton
+                android:id="@+id/position56"
+                style="@style/bottonlayout"
+                />
+
+            <ImageButton
+                android:id="@+id/position57"
+                style="@style/bottonlayout"
+                 />
+            <ImageButton
+                android:id="@+id/position58"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position59"
+                style="@style/bottonlayout"
+              />
+
+        </LinearLayout>
+        --5 x 5 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.546">
+
+            <ImageButton
+                android:id="@+id/position49"
+                style="@style/bottonlayout"
+             />
+
+            <ImageButton
+                android:id="@+id/position48"
+                style="@style/bottonlayout"
+                 />
+            <ImageButton
+                android:id="@+id/position47"
+                style="@style/bottonlayout"
+              />
+            <ImageButton
+                android:id="@+id/position46"
+                style="@style/bottonlayout"
+                />
+
+            <ImageButton
+                android:id="@+id/position45"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position44"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position43"
+                style="@style/bottonlayout"
+           />
+
+            <ImageButton
+                android:id="@+id/position42"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position41"
+                style="@style/bottonlayout"
+              />
+            <ImageButton
+                android:id="@+id/position40"
+                style="@style/bottonlayout"
+               />
+
+        </LinearLayout>
+        --4 x 4 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.65">
+
+            <ImageButton
+                android:id="@+id/position30"
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position31"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position32"
+
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position33"
+
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position34"
+
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position35"
+
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position36"
+
+                style="@style/bottonlayout"/>
+
+            <ImageButton
+                android:id="@+id/position37"
+
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position38"
+
+                style="@style/bottonlayout"
+                />
+            <ImageButton
+                android:id="@+id/position39"
+                style="@style/bottonlayout"
+                />
+
+        </LinearLayout>
+        --3 x 3 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.75">
+
+            <ImageButton
+                android:id="@+id/position29"
+                style="@style/bottonlayout"
+             />
+            <ImageButton
+                android:id="@+id/position28"
+                style="@style/bottonlayout"
+               />
+            <ImageButton
+                android:id="@+id/position27"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position26"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position25"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position24"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position23"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position22"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position21"
+                style="@style/bottonlayout"/>
+
+            <ImageButton
+                android:id="@+id/position20"
+                style="@style/bottonlayout"/>
+
+        </LinearLayout>
+        --2 x 2 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.85">
+
+            <ImageButton
+                android:id="@+id/position10"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position11"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position12"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position13"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position14"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position15"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position16"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position17"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position18"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position19"
+                style="@style/bottonlayout"/>
+
+        </LinearLayout>
+        --1 x 1 y
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0."
+            app:layout_constraintVertical_bias="0.95">
+
+            <ImageButton
+                android:id="@+id/position09"
+                style="@style/bottonlayout" />
+
+            <ImageButton
+                android:id="@+id/position08"
+                style="@style/bottonlayout" />
+            <ImageButton
+                android:id="@+id/position07"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position06"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position05"
+                style="@style/bottonlayout"/>
+
+            <ImageButton
+                android:id="@+id/position04"
+                style="@style/bottonlayout" />
+            <ImageButton
+                android:id="@+id/position03"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position02"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position01"
+                style="@style/bottonlayout"/>
+            <ImageButton
+                android:id="@+id/position00"
+                style="@style/bottonlayout"/>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageButton
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue"
+        app:layout_constraintBottom_toBottomOf="@id/tass1"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        />
+
+    <ImageButton
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red"
+        app:layout_constraintBottom_toBottomOf="@id/tass2"
+        app:layout_constraintEnd_toEndOf="@id/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+     />
+</androidx.constraintlayout.widget.ConstraintLayout>
